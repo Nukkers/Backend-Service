@@ -1,0 +1,22 @@
+{
+  "name": "backend-service",
+  "version": "1.0.0",
+  "description": "A backend service built using NodeJS and ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nukkers/Backend-Service.git"
+  },
+  "author": "Naukhez Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nukkers/Backend-Service/issues"
+  },
+  "homepage": "https://github.com/Nukkers/Backend-Service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

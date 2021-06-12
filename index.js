@@ -8,9 +8,6 @@ app.get("/subscribe", (req, res) => {
     const usersIpAddress =
         req.headers["x-forwarded-for"] || req.socket.remoteAddress;
 
-    // Delete this line
-    console.log("usersIpAddress: ", usersIpAddress);
-
     // Check if the IP address is stored already
     if (usersIpAddress in ipDB) {
         // Increment the number of streams associated with that IP address
@@ -48,9 +45,6 @@ app.get("/unsubscribe", (req, res) => {
     // Get the IP address of the caller
     const usersIpAddress =
         req.headers["x-forwarded-for"] || req.socket.remoteAddress;
-
-     // Delete this line
-     console.log("usersIpAddress: ", usersIpAddress);
 
     // Check if the IP address is stored already
     if (usersIpAddress in ipDB && ipDB[usersIpAddress] > 0) {
